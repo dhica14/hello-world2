@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Light Theme</title>
+        <link href="./public/stylesheets/formStyle.css" rel="stylesheet" type="text/css">
+        </head>
+    <body>
+        <div class="container">  
+            <div class="header-image">
+                <div class="back-color">
+                    <div class="header-text">セミナーお申込みフォーム</div>
+                </div>
+            </div>
+            <div class="main">
+                <form name="form">
+                    <div class="question-list">
+                        <div class="inputform">                                
+                            <div class="question">                            
+                                <p>入力フォーム１</p>                                
+                                <input type="text" id="q-01" class="question-01" name="content1" placeholder="入力内容" />                                
+                            </div>
+                            <div class="question">                              
+                                <p>入力フォーム２</p>
+                                <input type="text" id="q-02" class="question-01" name="content2" placeholder="入力内容">                            
+                            </div>                            
+                            <div class="question">                            
+                                <p>チェックボタン</p>
+                                <div class="checkbox01">
+                                    <label class="checkbox_list">    
+                                        <input type="checkbox" name="checkbox01" class="checkbox01-input" value="10000">    
+                                        <span class="checkbox01-parts">チェックボックス01</span>  
+                                    </label>  
+                                    <label class="checkbox_list">    
+                                        <input type="checkbox" name="checkbox01" class="checkbox01-input" value="01000">    
+                                        <span class="checkbox01-parts">チェックボックス02</span>  
+                                    </label>  
+                                    <label class="checkbox_list">    
+                                        <input type="checkbox" name="checkbox01" class="checkbox01-input" value="00100">    
+                                        <span class="checkbox01-parts">チェックボックス03</span>  
+                                    </label>
+                                    <label class="checkbox_list">    
+                                        <input type="checkbox" name="checkbox01" class="checkbox01-input" value="00010">    
+                                        <span class="checkbox01-parts">チェックボックス04</span>  
+                                    </label>
+                                    <label class="checkbox_list">    
+                                        <input type="checkbox" name="checkbox01" class="checkbox01-input" value="00001">    
+                                        <span class="checkbox01-parts">チェックボックス05</span>  
+                                    </label>
+                                </div>                                
+                            </div>    
+                            <div class="question">                            
+                                <p>ラジオボタン</p>
+                                <div id="radio">
+                                    <input type="radio" name="radio02" class="radio02-input" id="radio02-01" value="1">  
+                                    <label for="radio02-01">ラジオ01</label>  
+                                    <input type="radio" name="radio02" class="radio02-input" id="radio02-02" value="2">  
+                                    <label for="radio02-02">ラジオ02</label>  
+                                    <input type="radio" name="radio02" class="radio02-input" id="radio02-03" value="3">  
+                                    <label for="radio02-03">ラジオ03</label>
+                                    <input type="radio" name="radio02" class="radio02-input" id="radio02-04" value="4">  
+                                    <label for="radio02-04">ラジオ04</label>  
+                                    <input type="radio" name="radio02" class="radio02-input" id="radio02-05" value="5">  
+                                    <label for="radio02-05">ラジオ05</label>
+                                </div>                                
+                            </div>
+                        </div>                                            
+                    </div>             
+                </form>
+                <div class="button-list">
+                    <div class="button">
+                        <input type="submit" value="送信" onclick="uploadFile();">
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./public/javascripts/jquery.min.js"></script>
+    <script src="./public/javascripts/apicall.js"></script>
+</html>
